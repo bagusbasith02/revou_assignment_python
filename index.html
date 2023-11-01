@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>RevoU Python Assignment</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h1>RevoU Python Assignment</h1>
+						</header>
+						
+						<h2>Project Summary</h2>
+						<ol>
+							<li>Imported and joined dataset from the source files.</li>
+							<li>Conducted data cleaning such as removing null values, removing outliers, removing irrelevant variables, and machine learning.</li>
+							<li>Conducted exploratory data analysis on the dataset and convey the important findings</li>
+							<li>Created user segmentation using k-means clustering</li>
+					  	</ol>
+						<br>
+
+						<h2>Insights</h2>
+						<ol>
+							<li>Highest value customer is dominated by both of the promo sensitive customer and non promo sensitive.</li>
+							<li>High Value Caustomer has the highest transaction amount in the past 6 months.</li>
+							<li>Transaction count is being dominated from “High Activity” group.</li>
+							<li>The lowest customer value is really sensitive to promotion.</li>
+							<li>Lowest customer value has the highest amount of transaction and Based on previous graphs this could be the effect of the promotion program.</li>
+					  	</ol>
+						
+						<p><h2>Project Files</h2></p>
+						For a more comprehensive analysis and visualization, please open the project files.
+						<ul>
+							<li><a href="https://docs.google.com/presentation/d/1BYdx3pPQeg2MdsnD_SIHJZ1TVmp1JnKpac95ZMlZtYE/edit?usp=sharing">Presentation Deck</a></li>
+							<li><a href="https://colab.research.google.com/drive/1rvK0vRvU3u9BUD0mylwop_g3I4mPND-k?usp=sharing">Python Notebook - Google Collab</a></li>
+						</ul>
+					</section>
+
+				<!-- Two -->
+					<section id="two">
+						<h2>Project Background</h2>
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-5"><span class="image fit"><img src="images/PJ BG Python.jpg"></span></div>
+							</div><br>
+							<p>Python is the most challenging yet also exciting data programming languages. In this assignment we practiced python skills such as data cleaning and exploratory data analysis using python code. Also, we practiced more advanced python skills such as user segmentation using cluster analysis.  We used Google Collab as a python notebook tools.</p>
+					</section>
+				
+				<!-- Three -->
+				<section id="three">
+					<h2>Data Scope, Goals & Objectives</h2>
+						<p>In this assignment we used data from kaggle. In this dataset thera are several information such as profile information, average transaction, promo transaction, & etc.</p>
+					<h3>Goals</h3>
+						<li>Identifying different segments, we can gain insights into the diverse needs, preferences, and behaviors of your customer base. This knowledge can help us develop a more effective and targeted rewards program, leading to increased customer satisfaction, loyalty, and overall business growth.</li>
+						<li>Evaluate effectiveness and success of the promotion programs, By conducting a comprehensive analysis of the promotion program’s performance, we can identify areas for improvement, and make informed decisions for future promotional initiatives.</li>
+					<h3>Objectives</h3>
+						<ol>
+						<li>Conducting data cleaning using various methods so the result would be more accurate.</li>
+						<li>Exploratory data analysis of the dataset to find the problem within REVOU BANK.</li>
+						<li>Creating user segmentation using cluster analysis to help targeted marketing.</li>
+						</ol>
+					<br>
+				</section>	
+
+				<!-- Four -->
+				<section id="four">
+					<h2>Data Analysis</h2>
+					<p>Note : only important steps shown to simplify the analysis explanation.</p>
+
+						<h3>Data Preparation & Cleaning</h3>
+						<p><b>Data Prep</b></p>
+						<script src="https://pastebin.com/embed_js/Hs0ApFj8"></script>
+						<br><p>Python environment preparation by loading the necessary library.</p>
+
+						<p><b>Import Dataset</b></p>
+						<script src="https://pastebin.com/embed_js/RCWneR3C"></script>
+						<br><p>Imported dataset from google sheets using csv interpreter.</p>
+
+						<p><b>Handling Data</b></p>
+						<script src="https://pastebin.com/embed_js/2EBQY0xV"></script>
+						<br><p>Removed irrelevant features from the dataset.</p>
+						
+						<script src="https://pastebin.com/embed_js/dMnShZyc"></script>
+						<br><p>Removed duplicate values from the dataset.</p>
+
+						<p><b>Feature Format</b></p>
+						<script src="https://pastebin.com/embed_js/h7Y0K3iB"></script>
+						<br><p>Changed the feature format to datetime, account id to str, homeowner status to int. This is necessary to analyze the data further.</p>
+
+						<h3>Exploratory Data Analysis</h3>
+						<p><b>Evaluative descriptive statistics</b></p>
+						<script src="https://pastebin.com/embed_js/Yap53Xnp"></script><br>
+						<p>Numerical feature desciption using describe function in python.</p>
+
+						<p><b>Customer Demographic</b></p>
+						<script src="https://pastebin.com/embed_js/syQnfKAS"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-7"><span class="image fit"><img src="images/Customer Demo 1.png"></span></div>
+						</div><br>
+
+						<p><b>Promo-Sensitive by MAPP_Active_Group</b></p>
+						<script src="https://pastebin.com/embed_js/KQuQ7mkp"></script>
+						<br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-7"><span class="image fit"><img src="images/Promo Sensi by MAPP Group 1.png"></span></div>
+						</div><br>
+						<p>Highest value customer is dominated by both of the promo sensitive customer and non promo sensitive.</p>
+
+						<p><b>Transaction Amount Customer by MAPP_Active_Group</b></p>
+						<script src="https://pastebin.com/embed_js/dHSWrED3"></script>
+						<br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-7"><span class="image fit"><img src="images/Txn Amnt Cust by MAPP Group 1.png"></span></div>
+						</div><br>
+						<p>High Value Caustomer has the highest transaction amount in the past 6 months.</p>
+
+						<h3>User Segmentation</h3>
+						<p><b>Preparing the data for cluster analysis</b></p>
+						<script src="https://pastebin.com/embed_js/jzHFk6Le"></script>
+
+						<br><p><b>How many clusters? We used Elbow Method and Silhouette Analysis</b></p>
+						<script src="https://pastebin.com/embed_js/bWgV6RWc"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-7"><span class="image fit"><img src="images/Elbow Method 1.png"></span></div>
+						</div><br>
+						<p>The turning point to determine the number of clusters between 3 or 4 requires further examination using the silhouette method.</p>
+						<script src="https://pastebin.com/embed_js/tssaPaES"></script><br>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-7"><span class="image fit"><img src="images/Silhoutte Method 1.png"></span></div>
+						</div>
+						<div class="row gtr-50 gtr-uniform">
+							<div class="col-8"><span class="image fit"><img src="images/cluster_2.png"></span></div>
+						</div><br>
+						<p>The chosen cluster is 3 because although cluster 2 has a high silhouette score, it doesn't provide sufficient insight for segmentation analysis.</p>
+
+						<br><p><b>Creating cluster using K-Means</b></p>
+						<script src="https://pastebin.com/embed_js/E8hkjnp4"></script><br>
+						<p>The K-Means clustering used because the data have more numerical features than categorical features.</p>
+						<ol>
+							<li>The distribution of data on each cluster quite good (no cluster with small count).</li>
+							<li>Cluster 0: has the highest Average Transaction Freq & Highest Revenue Generated.</li>
+							<li>Cluster 1: is the highest average sales.</li>
+							<li>Cluster 2: is the most being promo-sensitive client.</li>
+						</ol>
+						<br>
+				</section>
+
+				<!-- Five -->
+				<section id="five">
+					<h2>Recommendation</h2>
+					<ol>
+							<li>For Cluster 0 Investment and Wealth Management Service (Deposito).</li>
+							<li>For Cluster 1 Offer Higher Credit Limits.</li>
+							<li>For Cluster 2 Cashback and Reward Program.</li>
+					</ol>
+					<br><br>
+				
+					<a href="https://bagusbasith02.github.io/portfolio/" class="button small">Home</a>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
